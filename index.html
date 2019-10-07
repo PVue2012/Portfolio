@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>jQuery Function</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("a").click(function() {
+          var selected = $(this);
+          $('a').removedClass('active');
+          $(selected).addClass('active');
+
+        });
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutMe = $('.aboutMe');
+       
+        $a.click(function(){
+            $home.fadeIn();
+            $aboutMe.fadeOut();
+        });
+        $b.click(function(){
+            $aboutMe.fadeIn();
+            $home.fadeOut();
+        });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="nav">
+        <a class="a active" href="#">Home</a>
+        <a class="b" href="#">About Me</a>
+        <a class="c" href="#">Gallery</a>
+        <a class="d" href="#">Contact</a>
+
+    </div>
+
+<div class="content">
+    <div class="home">
+        <h1>Peter Vue</h1>
+       
+    </div>
+    <div class="aboutMe">
+        <p> Hi friends.<br>
+        Welcome to my profile page. On this page you will find projects 
+        that I have done and my contact information. </p>
+        <br>
+        <p>Visit my git hub profile <a href= "https://github.com/PVue2012">Here</a>
+        Here is a link to my resume
+        <a href="https://pdfhost.io/v/NiRlglfwv_resumepdf.pdf">Here</a></p>
+
+        <p>Here are some projects that I have done.
+        <a href="https://oudomso.github.io/buccap-v2/index.html">Project One</a>
+        <a href="https://seaturtle.herokuapp.com/">Project Two</a></p>
+        <br>
+        <p>
+        Assignments.
+        <a href=" https://peter-clicky-game.herokuapp.com/">Clicky Game</a>
+        <a href="https://pvue2012.github.io/TriviaGame/">Trivia game/a></p>
+
+
+    </div>
+
+</div>
+
+</div>
+</script>
+</body>
+</html>
